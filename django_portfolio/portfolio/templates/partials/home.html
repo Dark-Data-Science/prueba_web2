@@ -1,0 +1,40 @@
+{% extends 'partials/layout.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- Hero Section -->
+<header class="row bg-black align-items-center">
+    <div class="col-md-9 text-center">
+        <h1>KNOWHERE</h1>
+        <h1><strong>Impresiones 3D</strong></h1>
+        <h3></h3>
+      <p>Descubre un mundo fascinante donde la creatividad cobra vida y la 
+        tecnología se fusiona con el arte. 
+        Nos enorgullece presentarte una colección única de artículos 
+        coleccionables impresos en 3D que transformarán tu experiencia 
+        de coleccionismo.</p>
+    </div>
+  
+    <div class="col-md-9 text-center">
+        <img src="{% static 'portfolio/nuevo_logo.jpeg' %}" alt="" class="img-fluid" style="width:75%;" />
+      </div>
+
+      <div class="col-md-9 text-center">
+        <p style="margin-top: 20px;">
+            <a href="https://www.facebook.com/profile.php?id=100085586357828&mibextid=ZbWKwL" target="_blank" style="margin-right: 15px;">
+                <img src="{% static 'portfolio/facebook.png' %}" alt="Facebook" style="width:50px;">
+            </a>
+            <a href="https://www.instagram.com/knowhere3d?igsh=NjkxYjVrM2QxMXU0" target="_blank" style="margin-right: 15px;">
+                <img src="{% static 'portfolio/instagram.png' %}" alt="Instagram" style="width:50px;">
+            </a>
+            <a href="mailto:edu.eav3@gmail.com" target="_blank">
+                <img src="{% static 'portfolio/Gmail.png' %}" alt="Gmail" style="width:50px;">
+            </a>
+        </p>
+    </div>
+</header>
+
+
+{% endblock %}
