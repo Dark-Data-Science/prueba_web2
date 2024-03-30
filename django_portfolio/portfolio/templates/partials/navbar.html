@@ -2,7 +2,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
   <div class="container">
-    <a class="navbar-brand fw-bold fst-italic" href="/">KNW</a>
+    <a class="navbar-brand fw-bold fst-italic" href="/">Home</a>
+    <a class="navbar-brand fw-bold fst-italic" href="{% url 'blog:posts' %}">Gallery</a> <!-- Movido aquí -->
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,12 +12,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a class="navbar-brand fw-bold fst-italic" href="{% url 'blog:posts' %}">Galeria</a>
+          <!-- Este es el antiguo lugar del botón Galeria -->
         </li>
         <li class="nav-item d-flex align-items-center">
-          
-
-
+          <!-- Aquí pueden ir otros elementos de la barra de navegación -->
         </li>
       </ul>
     </div>
